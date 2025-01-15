@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+
+    <title>测试JSONP</title>
+</head>
+
+<body>
+    <button id="btnJSONP">测试JSONP</button>
+
+
+
+
+    <script>
+      $('#btnJSONP').on('click',function(){
+        $.ajax({
+          url:'http://localhost:12138/api/jsonp',
+          dataType:'jsonp',   //表示要发起JSONP请求
+          success:function(data){
+            console.log(data)
+          }
+        })
+      })
+    </script>
+</body>
+
+</html>

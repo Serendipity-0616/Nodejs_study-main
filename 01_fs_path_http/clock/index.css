@@ -1,0 +1,28 @@
+
+    body {
+
+        background-image: linear-gradient(to bottom right, rgb(157, 30, 18), rgb(242, 197, 1));
+        background-attachment: fixed;
+    }
+
+    .container {
+        width: 50%;
+        height: 50vh;
+        background-color: rgb(255, 255, 255);
+        opacity: 0.2;
+        position: relative;
+        margin: 0 auto;
+        top: 25vh;
+    }
+
+    .container div {
+        line-height: 150px;
+        text-align: center;
+        font-size: 50px;
+        width: 50%;
+        height: 150px;
+        display: inline-block;
+        position: absolute;
+        inset: 0;
+        margin: auto;
+    }
